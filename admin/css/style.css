@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  font-size: 100px;
+  width: 100%;
+}
+a {
+  text-decoration: wavy;
+  color: rgb(65, 61, 61);
+  font-size: 50px;
+  padding: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 150px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+form input {
+  width: 100%;
+  background-color: rgb(231, 219, 219);
+  border: 0px;
+  height: 20px;
+  border-radius: 10px;
+}
+label {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+}
+.login {
+  width: 100%;
+}
+.pwd {
+  width: 100%;
+}
+form {
+  padding-top: 40%;
+}
+.bouton {
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}

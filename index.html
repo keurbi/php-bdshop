@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jspo</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <input type="text" name="" id="login" />
+      <div id="msg"></div>
+      <input type="password" name="" id="pwd" />
+    </form>
+  </body>
+  <script>
+    document.getElementById("login").addEventListener("change", function (e) {
+      fetch("checkLogin.php?login=" + this.value)
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          console.log(data);
+          document.getElementById("msg").innerText = "";
+          if (data != "0") {
+            document.getElementById("msg").innerText =
+              "Identifiant déjà enregistré.";
+          }
+        });
+    });
+  </script>
+</html>
